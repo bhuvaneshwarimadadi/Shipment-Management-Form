@@ -12,6 +12,13 @@ This application uses JPDB API for database operations like insert, update, and 
 - Built-in support for document, key-value, RDBMS-style tables.
 - Secure API key-based access.
 - Real-time updates without page reloads.
+JsonPowerDB is a real-time, high-performance, lightweight, and simple-to-use REST API-based multi-mode DBMS. It provides ready-to-use APIs for:
+- JSON Document Database
+- RDBMS-style Tables
+- Key-Value Database
+- GeoSpatial Database
+- Time-Series Data Management
+JPDB supports and promotes true serverless architecture and pluggable API development, making it an ideal backend for modern web and mobile applications.
 
 ## Scope of Functionalities
 - Add new shipment records

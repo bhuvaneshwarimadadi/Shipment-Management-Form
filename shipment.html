@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipment Management Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="text-center">Shipment Management Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="shipmentForm">
+                            <div class="mb-3 row">
+                                <label for="shipNo" class="col-sm-3 col-form-label">Shipment No:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="shipNo" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="description" class="col-sm-3 col-form-label">Description:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="description" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="source" class="col-sm-3 col-form-label">Source:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="source" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="destination" class="col-sm-3 col-form-label">Destination:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="destination" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="shippingDate" class="col-sm-3 col-form-label">Shipping Date:</label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="shippingDate" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="deliveryDate" class="col-sm-3 col-form-label">Expected Delivery Date:</label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="deliveryDate" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12 text-center">
+                                    <button type="button" class="btn btn-primary me-2" id="save" onclick="saveData()" disabled>Save</button>
+                                    <button type="button" class="btn btn-warning me-2" id="update" onclick="updateData()" disabled>Update</button>
+                                    <button type="button" class="btn btn-danger" id="reset" onclick="resetForm()" disabled>Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
